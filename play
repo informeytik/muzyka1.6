@@ -1,0 +1,560 @@
+{
+  "name": "Play",
+  "permissions": "NONE",
+  "restriction": "0",
+  "_id": "RnGAI",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member"
+    },
+    {
+      "title": "Błąd!",
+      "author": "",
+      "color": "ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "errr",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "errr",
+      "message": "> `❌` Musisz być na kanale głosowym!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "errr",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "condition": "0",
+      "comparison": "3",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "Błąd!",
+      "author": "",
+      "color": "ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "rerr",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "rerr",
+      "message": "> `❌` Podaj tytuł!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "rerr",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "bot",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "0",
+      "iftrueVal": "20",
+      "iffalse": "2",
+      "iffalseVal": "20",
+      "name": "Check If Member"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "19",
+      "storage": "1",
+      "varName2": "vcm",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "bot",
+      "info": "19",
+      "storage": "1",
+      "varName2": "vcbot",
+      "name": "Store Member Info"
+    },
+    {
+      "storage": "1",
+      "varName": "vcm",
+      "comparison": "1",
+      "value": "tempVars(\"vcbot\")",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "title": "Błąd!",
+      "author": "",
+      "color": "ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "errr",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "errr",
+      "message": "> `❌` Musisz być na tym samym kanale co bot!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "errr",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "message": "0",
+      "varName": "",
+      "info": "1",
+      "ParamN": "1",
+      "separator": "",
+      "storage": "1",
+      "varName2": "Message",
+      "count": "",
+      "name": "Store Message Params"
+    },
+    {
+      "server": "0",
+      "info": "5",
+      "storage": "1",
+      "varName": "QueueLength",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://ytscrape.maceratime.com/api/search?q=${tempVars(\"Message\")}",
+      "path": "$.results[0].video.title",
+      "storage": "1",
+      "varName": "Title",
+      "debugMode": "1",
+      "headers": "",
+      "reUse": "1",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://ytscrape.maceratime.com/api/search?q=${tempVars(\"Message\")}",
+      "path": "$.results[0].video.url",
+      "storage": "1",
+      "varName": "URL",
+      "debugMode": "1",
+      "headers": "",
+      "reUse": "1",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://ytscrape.maceratime.com/api/search?q=${tempVars(\"Message\")}",
+      "path": "$.results[0].video.thumbnail_src",
+      "storage": "1",
+      "varName": "Thumbnail",
+      "debugMode": "1",
+      "headers": "",
+      "reUse": "1",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://ytscrape.maceratime.com/api/search?q=${tempVars(\"Message\")}",
+      "path": "$.results[0].video.duration",
+      "storage": "1",
+      "varName": "czas",
+      "debugMode": "1",
+      "headers": "",
+      "reUse": "1",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://ytscrape.maceratime.com/api/search?q=${tempVars(\"Message\")}",
+      "path": "$.results[0].video.views",
+      "storage": "1",
+      "varName": "wyświetlenia",
+      "debugMode": "1",
+      "headers": "",
+      "reUse": "1",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "text": "${tempVars(\"wyświetlenia\")}",
+      "text2": "views",
+      "text3": "",
+      "info": "0",
+      "storage": "1",
+      "varName": "rvievs",
+      "name": "Replace Text"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://ytscrape.maceratime.com/api/search?q=${tempVars(\"Message\")}",
+      "path": "$.results[0].uploader.username",
+      "storage": "1",
+      "varName": "tworca",
+      "debugMode": "1",
+      "headers": "",
+      "reUse": "1",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "token": "",
+      "user": "",
+      "pass": "",
+      "url": "https://ytscrape.maceratime.com/api/search?q=${tempVars(\"Message\")}",
+      "path": "$.results[0].video.upload_date",
+      "storage": "1",
+      "varName": "data",
+      "debugMode": "1",
+      "headers": "",
+      "reUse": "1",
+      "name": "Store Json From WebAPI"
+    },
+    {
+      "translateTo": "pl",
+      "translateMessage": "${tempVars(\"data\")}",
+      "storage": "1",
+      "varName": "tdata",
+      "name": "Translate"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "16",
+      "storage": "1",
+      "varName2": "AvatarURL",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "DisplayName",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "obvc",
+      "name": "Store Voice Channel Info"
+    },
+    {
+      "storage": "1",
+      "varName": "QueueLength",
+      "comparison": "1",
+      "value": "undefined",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "10",
+      "name": "Check Variable"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#87F500",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"AvatarURL\")}",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Sukces!",
+      "message": "`🎵` Poprawnie puszczono muzykę!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Autor:",
+      "message": "> ${tempVars(\"DisplayName\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Kanał:",
+      "message": "> ${tempVars(\"obvc\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Tytuł:",
+      "message": "> [${tempVars(\"Title\")}](${tempVars(\"URL\")})",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Długość:",
+      "message": "> ${tempVars(\"czas\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Czas powstania:",
+      "message": "> ${tempVars(\"tdata\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Wyświetlenia:",
+      "message": "> ${tempVars(\"rvievs\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "count": "9",
+      "name": "Skip Actions"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#87F500",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"AvatarURL\")}",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Sukces!",
+      "message": "`🎵` Poprawnie dodano muzykę do kolejki!",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Autor:",
+      "message": "> ${tempVars(\"DisplayName\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Kanał:",
+      "message": "> ${tempVars(\"obvc\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Tytuł:",
+      "message": "> [${tempVars(\"Title\")}](${tempVars(\"URL\")})",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Długość:",
+      "message": "> ${tempVars(\"czas\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Czas powstania:",
+      "message": "> ${tempVars(\"tdata\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Wyświetlenia:",
+      "message": "> ${tempVars(\"rvievs\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "name": "Join Voice Channel"
+    },
+    {
+      "url": "${tempVars(\"URL\")}",
+      "seek": "0",
+      "volume": "",
+      "passes": "1",
+      "bitrate": "",
+      "type": "0",
+      "name": "Play YouTube Video"
+    }
+  ],
+  "_aliases": [
+    "p",
+    "play"
+  ]
+}
