@@ -1,0 +1,116 @@
+{
+  "name": "clearqueue",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "cCOye",
+  "actions": [
+    {
+      "server": "0",
+      "info": "5",
+      "storage": "1",
+      "varName": "qkl",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "storage": "1",
+      "varName": "qkl",
+      "comparison": "1",
+      "value": "undefined",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "name": "Check Variable"
+    },
+    {
+      "title": "Błąd!",
+      "author": "",
+      "color": "ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emmm",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emmm",
+      "message": "> `❌` kolejka jest pusta!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emmm",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "name": "Clear Queue"
+    },
+    {
+      "title": "Sukces!",
+      "author": "",
+      "color": "#87F500",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "em",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "em",
+      "message": "> `✔️` Kolejka została wyczyszczona!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "em",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_aliases": [
+    "cq"
+  ]
+}
