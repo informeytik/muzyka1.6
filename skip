@@ -1,0 +1,131 @@
+{
+  "name": "skip",
+  "permissions": "NONE",
+  "restriction": "0",
+  "actions": [
+    {
+      "measurement": "1",
+      "value": "10",
+      "save": "0",
+      "restrict": "0",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "3",
+      "storage": "1",
+      "varName": "czas",
+      "name": "Set Time Restriction"
+    },
+    {
+      "title": "Musisz poczekać `${tempVars(\"czas\")}`!",
+      "author": "",
+      "color": "",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "emem",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emem",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "iftrue": "2",
+      "iftrueVal": "10",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check is Bot in Voice Channel"
+    },
+    {
+      "title": "Bot nie jest na vc!",
+      "author": "",
+      "color": "BLACK",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "no-em",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "no-em",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
+      "info": "12",
+      "storage": "1",
+      "varName": "next-titel",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "amount": "1",
+      "name": "Skip Queue"
+    },
+    {
+      "title": "Pominięto piosenkę.",
+      "author": "",
+      "color": "GREEN",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "yes-em",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "yes-em",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "VUrIf",
+  "_aliases": [
+    "sk",
+    "s"
+  ]
+}
