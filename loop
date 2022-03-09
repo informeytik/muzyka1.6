@@ -1,0 +1,224 @@
+{
+  "name": "loop",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "sSUJv",
+  "actions": [
+    {
+      "member": "1",
+      "varName": "",
+      "info": "4",
+      "varName2": "",
+      "iftrue": "3",
+      "iftrueVal": "2",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check If Member"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Nie jesteś na vc!",
+      "storage": "0",
+      "varName2": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "condition": "0",
+      "comparison": "0",
+      "value": "1",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Parameters"
+    },
+    {
+      "title": "Błąd!",
+      "author": "",
+      "color": "RED",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emm1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emm1",
+      "message": "> `❌` Musisz włączyć lub wyłączyć loopa!\n> `-loop enable`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emm1",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "loopmayu",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "1",
+      "varName": "loopmayu",
+      "comparison": "1",
+      "value": "'enable'",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "5",
+      "name": "Check Variable"
+    },
+    {
+      "title": "Sukces!",
+      "author": "",
+      "color": "GREEN",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "emm2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emm2",
+      "message": "> `✔️` Włączono powtarzanie kolejki.\n\n> Aby wyłączyć powtarzanie, wpisz `-loop disable`.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emm2",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "status": "0",
+      "loop": "0",
+      "name": "Loop Queue"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "storage": "1",
+      "varName": "loopmayu",
+      "comparison": "1",
+      "value": "'disable'",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "5",
+      "name": "Check Variable"
+    },
+    {
+      "title": "Sukces!",
+      "author": "",
+      "color": "GREEN",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "emm3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emm3",
+      "message": "Wyłączono powtarzanie.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emm3",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "status": "1",
+      "loop": "0",
+      "name": "Loop Queue"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Błąd!",
+      "author": "",
+      "color": "RED",
+      "timestamp": "true",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "emm4",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "emm4",
+      "message": "Poprawne użycie: \n`-loop enable`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "emm4",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_aliases": [
+    "l"
+  ],
+  "comType": "0"
+}
