@@ -1,0 +1,212 @@
+{
+  "name": "queue",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "stFUA",
+  "actions": [
+    {
+      "server": "0",
+      "info": "13",
+      "storage": "1",
+      "varName": "name-playing",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "3",
+      "storage": "1",
+      "varName": "queue-list",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "5",
+      "storage": "1",
+      "varName": "queue-length",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "9",
+      "storage": "1",
+      "varName": "piosena",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "storage": "1",
+      "varName": "queue-length",
+      "comparison": "1",
+      "value": "undefined",
+      "iftrue": "2",
+      "iftrueVal": "8",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "queue-length",
+      "comparison": "1",
+      "value": "0",
+      "iftrue": "2",
+      "iftrueVal": "12",
+      "iffalse": "0",
+      "iffalseVal": "15",
+      "name": "Check Variable"
+    },
+    {
+      "storage": "1",
+      "varName": "queue-length",
+      "comparison": "4",
+      "value": "0",
+      "iftrue": "2",
+      "iftrueVal": "16",
+      "iffalse": "1",
+      "iffalseVal": "16",
+      "name": "Check Variable"
+    },
+    {
+      "title": "Błąd!",
+      "author": "",
+      "color": "RED",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "em1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "em1",
+      "message": "> Obecnie nic nie gra!",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "em1",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "title": "Kolejka:",
+      "author": "",
+      "color": "#87F500",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "em2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "em2",
+      "message": "> Teraz gram:\n> [${tempVars(\"name-playing\")}](${tempVars(\"piosena\")})\n> \n> `długość kolejki: ${tempVars(\"queue-length\")}`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "em2",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
+      "info": "12",
+      "storage": "1",
+      "varName": "tnext",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "server": "0",
+      "info": "4",
+      "storage": "1",
+      "varName": "unext",
+      "varName2": "",
+      "name": "Store Audio Info"
+    },
+    {
+      "title": "Kolejka:",
+      "author": "",
+      "color": "#87F500",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "em3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "em3",
+      "message": "> Teraz gram:\n> [${tempVars(\"name-playing\")}](${tempVars(\"piosena\")})\n> \n> Następne:\n> [${tempVars(\"tnext\")}](${tempVars(\"unext\")})\n> \n> `długość kolejki: ${tempVars(\"queue-length\")}`",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "em3",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_aliases": [
+    "q"
+  ]
+}
