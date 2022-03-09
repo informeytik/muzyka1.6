@@ -3,5 +3,9 @@
 𝓙𝓮ż𝓮𝓵𝓲 𝓬𝓸ś 𝓷𝓲𝓮 𝓭𝔃𝓲𝓪ł𝓪, 𝓹𝓲𝓼𝔃 𝓹𝓿.
 
 ![play](https://user-images.githubusercontent.com/101056548/157512299-17e66baa-6a80-4865-a7c9-e1aaed85e266.png)
+
 ![V4Zao6HHM7](https://user-images.githubusercontent.com/101056548/157512493-518b6ae8-7fa4-4314-9b9b-fc2882d1fb7c.png)
+
 ![clearqueue](https://user-images.githubusercontent.com/101056548/157512733-8df7324b-eb87-4d31-89e0-2fbbf5cf7811.png)
+
+![queue](https://user-images.githubusercontent.com/101056548/157512867-802af0c9-8049-4c6d-a843-67855bc9297e.png)
